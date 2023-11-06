@@ -1,0 +1,15 @@
+.mainvisual {
+  display: flex;
+  height: 300px;
+  & > img {
+    width: 60%;
+    position: static !important;
+    height: auto;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

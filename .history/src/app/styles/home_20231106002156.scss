@@ -1,0 +1,6 @@
+.mainvisual {
+  height: 350px;
+  & > img {
+    height: auto;
+  }
+}

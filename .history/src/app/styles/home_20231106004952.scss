@@ -1,0 +1,14 @@
+.mainvisual {
+  display: flex;
+  height: 300px;
+  & > img {
+    position: static !important;
+    height: auto;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

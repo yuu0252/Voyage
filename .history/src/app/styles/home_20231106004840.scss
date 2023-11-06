@@ -1,0 +1,8 @@
+.mainvisual {
+  display: flex;
+  height: 300px;
+  & > img {
+    position: static !important;
+    height: auto;
+  }
+}

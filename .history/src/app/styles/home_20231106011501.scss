@@ -1,0 +1,20 @@
+.mainvisual {
+  display: flex;
+  height: 300px;
+  &__left {
+    width: 70%;
+    position: relative;
+
+    & > img {
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+}

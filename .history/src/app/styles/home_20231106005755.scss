@@ -1,0 +1,16 @@
+.mainvisual {
+  display: flex;
+  height: 300px;
+  &__left {
+    width: 60%;
+    position: relative;
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+  }
+}

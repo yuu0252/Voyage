@@ -1,0 +1,14 @@
+html {
+  min-height: screen;
+}
+
+main {
+  position: relative;
+  margin-top: 60px;
+}
+
+section {
+  display: flex;
+  margin: 0 30px;
+  justify-content: center;
+}

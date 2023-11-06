@@ -1,0 +1,11 @@
+html {
+  min-height: screen;
+}
+
+main {
+  position: relative;
+  margin-top: 60px;
+}
+
+section {
+}

@@ -1,0 +1,9 @@
+html {
+  min-height: screen;
+}
+
+main {
+  position: relative;
+  margin-top: 60px;
+  padding: 0 30px;
+}
