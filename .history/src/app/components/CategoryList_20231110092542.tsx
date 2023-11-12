@@ -1,0 +1,19 @@
+import { client } from 'libs/client';
+
+export default async function CategoryList() {
+  const categories = await client
+    .get({
+      endpoint: 'categories',
+    })
+    .then((res) => {
+      console.log(res);
+    });
+
+  return (
+    <ul>
+      {/* {categories.map((category) => {
+        <li key={category.contents.id}>{category.contents.name}</li>;
+      })} */}
+    </ul>
+  );
+}
