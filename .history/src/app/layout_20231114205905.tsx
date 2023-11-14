@@ -1,19 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import 'ress';
+import { notosansjp } from './fonts';
 import Footer from './components/Footer';
-
-export const notosansjp = Noto_Sans_JP({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-export const notoserifjp = Noto_Serif_JP({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -1,0 +1,53 @@
+$themeColor: #bc947c;
+$textColor: #484848;
+
+@mixin min {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+#content {
+  margin: 30px 0;
+}
+
+.content {
+  &__list {
+    width: 100%;
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    max-height: 150px;
+    padding: 15px 0;
+    border-bottom: 3px dotted $themeColor;
+
+    &:first-of-type {
+      border-top: 3px dotted $themeColor;
+    }
+  }
+
+  &__img {
+    width: 30%;
+    object-fit: contain;
+  }
+
+  &__description {
+    width: 70%;
+    & > h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      @include min {
+        font-size: 24px;
+      }
+    }
+
+    & > p {
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+}

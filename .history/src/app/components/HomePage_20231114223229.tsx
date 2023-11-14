@@ -1,7 +1,7 @@
 'use client';
 
 import '../styles/home.scss';
-import { Noto_Sans_JP, Noto_Serif_JP } from '@next/font/google';
+import { Noto_Sans_JP, Noto_Serif_JP } from 'next/font/google';
 import { Waypoint } from 'react-waypoint';
 import { useState } from 'react';
 

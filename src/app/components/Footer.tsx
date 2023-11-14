@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import '../styles/footer.scss';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,10 +8,12 @@ export default function Footer() {
       <div className="footer-container">
         <div>
           <Link href="/" className="footer__logo">
-            <img
-              src="./images/本棚の無料アイコン 1 (黒).png"
+            <Image
+              src="/images/本棚の無料アイコン 1 (黒).png"
               alt="Deeply"
               className="footer__icon"
+              width={40}
+              height={40}
             />
             <h1 className="footer__title">
               <span className="sub-title">英語を深く学ぼう</span>

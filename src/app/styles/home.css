@@ -31,14 +31,7 @@
     opacity: 1;
   }
 }
-.copyright {
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.mainvisual {
+#mainvisual {
   position: relative;
   height: 500px;
   -webkit-animation-name: fadeInMainvisual;
@@ -49,12 +42,11 @@
           animation-timing-function: ease;
 }
 @media screen and (min-width: 768px) {
-  .mainvisual {
+  #mainvisual {
     height: 800px;
   }
 }
-
-.mainvisual video {
+#mainvisual video {
   width: 100%;
   height: 100%;
   display: block;
@@ -63,8 +55,7 @@
   -o-object-position: center center;
      object-position: center center;
 }
-
-.catch {
+#mainvisual .catch {
   position: absolute;
   width: 90%;
   font-size: 32px;
@@ -76,80 +67,37 @@
   transform: translateX(-50%);
 }
 @media screen and (min-width: 768px) {
-  .catch {
+  #mainvisual .catch {
     font-size: 48px;
   }
 }
 @media screen and (min-width: 960px) {
-  .catch {
+  #mainvisual .catch {
     width: 960px;
     font-size: 60px;
   }
 }
 
-.container {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}
-@media screen and (min-width: 960px) {
-  .container {
-    width: 960px;
-  }
-}
-
-.container--no-margin {
-  width: 100%;
-}
-@media screen and (min-width: 960px) {
-  .container--no-margin {
-    width: 960px;
-  }
-}
-
-.section-title__icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.section-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 60px;
-  font-size: 16px;
-}
-@media screen and (min-width: 768px) {
-  .section-title {
-    font-size: 20px;
-  }
-}
-.section-title--no-margin {
-  margin-bottom: 0;
-}
-
 /*当サイトについて*/
-.introduction {
+#introduction {
   margin: 60px 0;
 }
-.introduction__title {
+#introduction__title {
   margin-bottom: 45px;
 }
-.introduction p:not(:first-of-type) {
+#introduction p:not(:first-of-type) {
   margin-top: 30px;
 }
-.introduction span {
+#introduction span {
   font-weight: bold;
 }
-.introduction .text--large {
+#introduction .text--large {
   font-size: 150%;
 }
-.introduction .faded {
+#introduction .faded {
   opacity: 0;
 }
-.introduction .faded.active {
+#introduction .faded.active {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -160,26 +108,29 @@
           animation-fill-mode: forwards;
 }
 
-/*おすすめコンテンツ*/
+/*コンテンツ*/
+#content {
+  margin-bottom: 60px;
+}
+
 .swiper__container {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 60px 0;
-}
-.swiper__container > li {
-  height: 200px;
 }
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+.swiper-wrapper {
+  padding: 60px 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #bc947c !important;
 }
 
 .card__item {
@@ -216,74 +167,4 @@
   margin: 0 auto;
   white-space: nowrap;
   border-bottom: 1px dotted #484848;
-}
-
-.footer {
-  background-color: #bc947c;
-  width: 100%;
-}
-
-.footer-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 960px;
-  color: #484848;
-  padding: 30px 0;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 959px) {
-  .footer-container {
-    width: 90%;
-    padding: 30px 0 10px;
-  }
-}
-.footer__logo {
-  display: flex;
-  align-items: center;
-  height: 40px;
-}
-
-.footer__icon {
-  width: auto;
-  height: 40px;
-  margin-right: 10px;
-  filter: drop-shadow(0 0 1px rgb(109, 87, 75));
-}
-
-.footer__title {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1;
-  transform: translateY(-6px);
-}
-
-.footer__g-nav {
-  font-weight: bold;
-  line-height: 1;
-}
-
-.footer__g-nav > li {
-  margin-top: 10px;
-}
-
-.footer__sns-list {
-  display: flex;
-  width: 120px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footer__search__box {
-  width: 120px;
-  padding: 5px 10px;
-}
-
-.footer__main {
-  display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
 }

@@ -1,16 +1,16 @@
 'use client';
 
 import '../styles/home.scss';
-import { Noto_Sans_JP, Noto_Serif_JP } from '@next/font/google';
+import { notosansjp, notoserifjp } from 'next/font/google';
 import { Waypoint } from 'react-waypoint';
 import { useState } from 'react';
 
-const notosansjp = Noto_Sans_JP({
+export const notosansjp = Noto_Sans_JP({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
 });
-const notoserifjp = Noto_Serif_JP({
+export const notoserifjp = Noto_Serif_JP({
   weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
