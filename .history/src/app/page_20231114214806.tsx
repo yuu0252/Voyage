@@ -16,6 +16,8 @@ export default function Home() {
                   src="/images/万年筆アイコン4.png"
                   alt="アイコン:ペン"
                   className="section-title__icon"
+                  width={50}
+                  height={50}
                 />
                 <h2 className="section-title__text">学習コンテンツ</h2>
               </div>

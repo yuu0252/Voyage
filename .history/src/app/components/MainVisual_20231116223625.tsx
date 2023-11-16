@@ -22,9 +22,19 @@ export default function Mainvisual({
   return (
     <div id="mainvisual">
       {isSp ? (
-        <Image alt="サムネイル" src={content.imageSp.url} />
+        <Image
+          width={1980}
+          height={1080}
+          alt="サムネイル"
+          src={content.imageSp.url}
+        />
       ) : (
-        <Image alt="サムネイル" src={content.image.url} />
+        <Image
+          width={1980}
+          height={1080}
+          alt="サムネイル"
+          src={content.image.url}
+        />
       )}
     </div>
   );

@@ -12,6 +12,8 @@ export default function Footer() {
               src="/images/本棚の無料アイコン 1 (黒).png"
               alt="Deeply"
               className="footer__icon"
+              width={40}
+              height={40}
             />
             <h1 className="footer__title">
               <span className="sub-title">英語を深く学ぼう</span>

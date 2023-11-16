@@ -60,8 +60,6 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
               <li key={content.id}>
                 <Link className="card__item" href={`/contents/${content.id}`}>
                   <Image
-                    width={1980}
-                    height={1080}
                     alt="サムネイル"
                     className="card__img"
                     src={content.image.url}

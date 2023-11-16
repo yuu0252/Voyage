@@ -4,6 +4,7 @@ import '../styles/home.scss';
 import { Waypoint } from 'react-waypoint';
 import { useState } from 'react';
 import { notosansjp, notoserifjp } from '../constants';
+import Image from 'next/image';
 
 type Children = {
   children: React.ReactNode;
@@ -27,7 +28,7 @@ export default function HomePage({ children }: Children) {
       <section id="introduction" className={`${notoserifjp.className}`}>
         <div className="container">
           <div className="section-title introduction__title">
-            <img
+            <Image
               src="/images/卒業生アイコン.png"
               alt="アイコン:人"
               className="section-title__icon"

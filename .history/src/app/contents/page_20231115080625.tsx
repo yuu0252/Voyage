@@ -1,7 +1,7 @@
-import ContentList from '@/app/components/ContentList';
 import Image from 'next/image';
-import '../style.scss';
+import './style.scss';
 import Header from '@/app/components/Header';
+import CategoryList from '../components/CategoryList';
 
 export default function ContentListPage() {
   return (
@@ -15,10 +15,12 @@ export default function ContentListPage() {
                 src="/images/万年筆アイコン4.png"
                 alt="アイコン"
                 className="section-title__icon"
+                width={50}
+                height={50}
               />
-              <h2 className="section-title__text">ちょこっと英単語</h2>
+              <h2 className="section-title__text">コンテンツ一覧</h2>
             </div>
-            <ContentList category="pocket-word" />
+            <CategoryList />
           </div>
         </section>
       </main>

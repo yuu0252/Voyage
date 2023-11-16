@@ -49,13 +49,7 @@ export default function Header({
       <div className="header-container">
         <div>
           <Link href="/" className="header__logo">
-            <Image
-              width={40}
-              height={40}
-              src="/images/本.png"
-              alt="Deeply"
-              className="header__icon"
-            />
+            <Image src="/images/本.png" alt="Deeply" className="header__icon" />
             <h1 className="header__title">
               <span className="sub-title">英語を深く学ぼう</span>
               <br />

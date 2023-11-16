@@ -15,6 +15,8 @@ export default function ContentListPage() {
                 src="/images/万年筆アイコン4.png"
                 alt="アイコン"
                 className="section-title__icon"
+                width={50}
+                height={50}
               />
               <h2 className="section-title__text">ちょこっと英単語</h2>
             </div>
