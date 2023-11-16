@@ -3,9 +3,9 @@ import CategoryItem from './CategoryItem';
 
 export default async function CategoryList() {
   const categories = await axios
-    .get(`${process.env.MICROCMS_URL}categories`, {
+    .get(`${process.env.NEXT_PUBLIC_MICROCMS_URL}categories`, {
       headers: {
-        'X-MICROCMS-API-KEY': process.env.MICROCMS_AUTH_KEY,
+        'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_AUTH_KEY,
       },
     })
     .then((res) => {

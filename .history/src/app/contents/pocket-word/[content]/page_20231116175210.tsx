@@ -11,9 +11,9 @@ type params = {
 export default async function Content({ params }: { params: params }) {
   let isFailed = false;
   const content = await axios
-    .get(`${process.env.MICROCMS_URL}contents/${params.content}`, {
+    .get(`${process.env.NEXT_PUBLIC_MICROCMS_URL}contents/${params.content}`, {
       headers: {
-        'X-MICROCMS-API-KEY': process.env.MICROCMS_AUTH_KEY,
+        'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_AUTH_KEY,
       },
     })
     .then((res) => {

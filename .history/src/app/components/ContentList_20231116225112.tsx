@@ -4,10 +4,10 @@ import ContentItem from './ContentItem';
 export default async function ContentList({ category }: { category: string }) {
   const contents = await axios
     .get(
-      `${process.env.MICROCMS_URL}contents?filters=category[equals]${category}`,
+      `${process.env.NEXT_PUBLIC_MICROCMS_URL}contents?filters=category[equals]${category}`,
       {
         headers: {
-          'X-MICROCMS-API-KEY': process.env.MICROCMS_AUTH_KEY,
+          'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_AUTH_KEY,
         },
       }
     )

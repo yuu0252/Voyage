@@ -3,9 +3,9 @@ import SwiperItem from './Swiper';
 
 export default async function SwiperList({ category }: { category: string }) {
   const contents = await axios
-    .get(`${process.env.MICROCMS_URL}${category}`, {
+    .get(`${process.env.NEXT_PUBLIC_MICROCMS_URL}${category}`, {
       headers: {
-        'X-MICROCMS-API-KEY': process.env.MICROCMS_AUTH_KEY,
+        'X-MICROCMS-API-KEY': process.env.NEXT_PUBLIC_MICROCMS_AUTH_KEY,
       },
     })
     .then((res) => {
