@@ -1,4 +1,4 @@
-import Mainvisual from './Mainvisual';
+import Mainvisual from './MainVisual';
 
 export default function Article({
   content,

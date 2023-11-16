@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 type content = {
@@ -26,8 +25,8 @@ export default function ContentItem({
             href={`/contents/${category}/${content.id}`}
           >
             <Image
-              width={1980}
-              height={1080}
+              with={100}
+              height={100}
               alt="サムネイル"
               className="content__img"
               src={content.image.url}

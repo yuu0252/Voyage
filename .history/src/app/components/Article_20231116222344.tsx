@@ -1,4 +1,5 @@
-import Mainvisual from './Mainvisual';
+import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Article({
   content,
@@ -15,9 +16,27 @@ export default function Article({
     };
   };
 }) {
+  const isSp = useMediaQuery({ maxWidth: 767 });
+
   return (
     <main>
-      <Mainvisual content={content} />
+      <div id="mainvisual">
+        {isSp ? (
+          <Image
+            width={1980}
+            height={1080}
+            alt="サムネイル"
+            src={content.imageSp.url}
+          />
+        ) : (
+          <Image
+            width={1980}
+            height={1080}
+            alt="サムネイル"
+            src={content.image.url}
+          />
+        )}
+      </div>
       <section id="article">
         <div className="container">
           <h2 className="title">{content.title}</h2>

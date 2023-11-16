@@ -26,8 +26,8 @@ export default function ContentItem({
             href={`/contents/${category}/${content.id}`}
           >
             <Image
-              width={1980}
-              height={1080}
+              width={100}
+              height={100}
               alt="サムネイル"
               className="content__img"
               src={content.image.url}

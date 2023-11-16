@@ -53,7 +53,6 @@ $textColor: #484848;
     @include min {
       object-fit: contain;
       width: 30%;
-      height: auto;
     }
 
     &--center {

@@ -20,6 +20,10 @@ export default function CategoryItem({
       {categories.map((category: category) => (
         <li key={category.id}>
           <Link className="content__item" href={`/contents/${category.id}`}>
+            <img
+              className="content__img content__img--center"
+              src={category.image.url}
+            />
             <Image
               width={1980}
               height={1080}

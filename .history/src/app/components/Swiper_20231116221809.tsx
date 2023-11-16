@@ -58,6 +58,11 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
           <SwiperSlide key={content.id}>
             <li key={content.id}>
               <Link className="card__item" href={`/contents/${content.id}`}>
+                <img
+                  src={content.image.url}
+                  alt={content.name}
+                  className="card__img"
+                />
                 <Image
                   width={1980}
                   height={1080}
