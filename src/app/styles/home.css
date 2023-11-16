@@ -142,9 +142,15 @@
 }
 
 .card__img {
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .card__img {
+    height: 250px;
+  }
 }
 
 .card__title {

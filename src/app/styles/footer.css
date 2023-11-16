@@ -1,6 +1,7 @@
 .footer {
   background-color: #bc947c;
   width: 100%;
+  font-size: 16px;
 }
 
 .footer-container {
@@ -69,5 +70,6 @@
 }
 
 .copyright {
+  font-weight: 700;
   text-align: center;
 }

@@ -1,0 +1,19 @@
+$themeColor: #bc947c;
+$textColor: #484848;
+
+#pocket-word {
+  & .title {
+    margin-top: 60px;
+    padding-bottom: 15px;
+    border-bottom: 3px dotted $themeColor;
+  }
+
+  & h3,
+  h4 {
+    margin-top: 60px;
+  }
+
+  & p {
+    margin-top: 30px;
+  }
+}

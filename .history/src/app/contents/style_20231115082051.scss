@@ -1,0 +1,76 @@
+$themeColor: #bc947c;
+$textColor: #484848;
+
+@mixin max {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin min {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+#content {
+  padding: 90px 0 60px;
+}
+
+.content {
+  &__list {
+    width: 100%;
+
+    & > li {
+      border-bottom: 3px dotted $themeColor;
+
+      &:first-of-type {
+        border-top: 3px dotted $themeColor;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding: 15px 0;
+    @include min {
+      flex-direction: row;
+      justify-content: space-between;
+      max-height: 150px;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    @include max {
+      height: 120px;
+    }
+    @include min {
+      object-fit: contain;
+      width: 30%;
+    }
+  }
+
+  &__description {
+    @include min {
+      width: 65%;
+    }
+    & > h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      @include min {
+        font-size: 24px;
+      }
+    }
+
+    & > p {
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+}

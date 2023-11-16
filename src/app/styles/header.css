@@ -49,6 +49,7 @@ ul {
   z-index: 999;
   background-color: #fff;
   transition: all 1s;
+  font-size: 16px;
 }
 
 .header.transparent {
