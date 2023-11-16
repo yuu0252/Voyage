@@ -54,29 +54,28 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
         }}
         className="mySwiper"
       >
-        {contents &&
-          contents.map((content: content) => (
-            <SwiperSlide key={content.id}>
-              <li key={content.id}>
-                <Link className="card__item" href={`/contents/${content.id}`}>
-                  <Image
-                    width={1980}
-                    height={1080}
-                    alt="サムネイル"
-                    className="card__img"
-                    src={content.image.url}
-                  />
-                  <h3 className="card__title">{content.name}</h3>
-                  <div
-                    className="card__text"
-                    dangerouslySetInnerHTML={{
-                      __html: `${content.introduction}`,
-                    }}
-                  />
-                </Link>
-              </li>
-            </SwiperSlide>
-          ))}
+        {contents.map((content: content) => (
+          <SwiperSlide key={content.id}>
+            <li key={content.id}>
+              <Link className="card__item" href={`/contents/${content.id}`}>
+                <Image
+                  width={1980}
+                  height={1080}
+                  alt="サムネイル"
+                  className="card__img"
+                  src={content.image.url}
+                />
+                <h3 className="card__title">{content.name}</h3>
+                <div
+                  className="card__text"
+                  dangerouslySetInnerHTML={{
+                    __html: `${content.introduction}`,
+                  }}
+                />
+              </Link>
+            </li>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
