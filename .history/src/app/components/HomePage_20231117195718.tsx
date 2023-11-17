@@ -1,5 +1,4 @@
 import '../styles/home.scss';
-import Introduction from './Introduction';
 
 type Children = {
   children: React.ReactNode;
@@ -18,7 +17,7 @@ export default function HomePage({ children }: Children) {
           しよう
         </h2>
       </section>
-      <Introduction />
+
       {children}
     </>
   );

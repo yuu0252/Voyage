@@ -1,11 +1,15 @@
+'use client';
+
 import '../styles/home.scss';
-import Introduction from './Introduction';
+import { useState } from 'react';
 
 type Children = {
   children: React.ReactNode;
 };
 
 export default function HomePage({ children }: Children) {
+  const [isAppear, setIsAppear] = useState(false);
+
   return (
     <>
       <section id="mainvisual">
@@ -18,7 +22,7 @@ export default function HomePage({ children }: Children) {
           しよう
         </h2>
       </section>
-      <Introduction />
+
       {children}
     </>
   );
