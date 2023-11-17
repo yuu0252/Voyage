@@ -4,7 +4,6 @@ import './globals.css';
 import 'ress';
 import Footer from './components/Footer';
 import { notosansjp } from './constants';
-import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics';
 
 export const metadata: Metadata = {
   title: 'Voyage',
@@ -19,9 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body className={notosansjp.className}>
         {children}
         <Footer />
