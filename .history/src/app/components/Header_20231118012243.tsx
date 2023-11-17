@@ -74,7 +74,7 @@ export default function Header({
         <button
           className={`openbtn ${activeOpenbtn ? 'active' : ''}`}
           onClick={onClickOpenbtn}
-          aria-label="OpenButton"
+          aria-label="Open Button"
         >
           <span></span>
           <span></span>
