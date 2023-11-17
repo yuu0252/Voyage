@@ -16,7 +16,7 @@ export default function HomePage({ children }: Children) {
   return (
     <>
       <section id="mainvisual">
-        <video src="/images/mainvisual.mov" loop autoPlay muted playsInline />
+        <video src="/images/mainvisual.mp4" loop autoPlay muted playsInline />
         <h2 className="catch">
           英語の世界を
           <br />
