@@ -10,15 +10,13 @@ export default function Footer() {
           <Link href="/" className="footer__logo">
             <Image
               src="/images/本棚の無料アイコン 1 (黒).png"
-              alt="Deeply"
+              alt="Voyage"
               className="footer__icon"
-              width={40}
-              height={40}
             />
             <h1 className="footer__title">
-              <span className="sub-title">英語を深く学ぼう</span>
+              <span className="sub-title">英語の世界を旅しよう</span>
               <br />
-              Deeply
+              Voyage
             </h1>
           </Link>
         </div>

@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 import { notosansjp } from './constants';
 
 export const metadata: Metadata = {
-  title: 'Deeply',
+  title: 'Voyage',
   description:
-    '当サイト「Deeply」では英語を核心の意味から学んでいけるようコンテンツを配信していきます。',
+    '当サイト「Voyage」では英語を核心の意味から学んでいけるようコンテンツを配信していきます。',
 };
 
 export default function RootLayout({

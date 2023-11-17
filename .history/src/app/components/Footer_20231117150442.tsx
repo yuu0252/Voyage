@@ -10,13 +10,13 @@ export default function Footer() {
           <Link href="/" className="footer__logo">
             <Image
               src="/images/本棚の無料アイコン 1 (黒).png"
-              alt="Deeply"
+              alt="Voyage"
               className="footer__icon"
             />
             <h1 className="footer__title">
-              <span className="sub-title">英語を深く学ぼう</span>
+              <span className="sub-title">英語の世界を旅しよう</span>
               <br />
-              Deeply
+              Voyage
             </h1>
           </Link>
         </div>
@@ -32,7 +32,7 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-        <small className="copyright">&copy; 2023 Deeply</small>
+        <small className="copyright">&copy; 2023 Voyage</small>
       </div>
     </footer>
   );

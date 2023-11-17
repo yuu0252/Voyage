@@ -51,7 +51,7 @@ export default function Header({
           <Link href="/" className="header__logo">
             <Image src="/images/本.png" alt="Voyage" className="header__icon" />
             <h1 className="header__title">
-              <span className="sub-title">英語の世界を旅しよう</span>
+              <span className="sub-title">英語を深く学ぼう</span>
               <br />
               Voyage
             </h1>

@@ -34,11 +34,11 @@ export default function HomePage({ children }: Children) {
               className="section-title__icon"
             />
             <h2 className={`section-title__text ${notosansjp.className}`}>
-              Deeplyって？
+              Voyageって？
             </h2>
           </div>
           <p>
-            「Deeply」は<span>幅広い世代</span>
+            「Voyage」は<span>幅広い世代</span>
             に向けた総合英語学習Webサイトです。
           </p>
           <p>
@@ -52,15 +52,15 @@ export default function HomePage({ children }: Children) {
             bottomOffset="400px"
           >
             <p>
-              <span>Deeply</span>は「
+              <span>Voyage</span>は「
               <span className={`text--large faded ${isAppear ? 'active' : ''}`}>
-                &nbsp;深く&nbsp;
+                &nbsp;旅&nbsp;
               </span>
               」という意味。
             </p>
           </Waypoint>
           <p>
-            当サイト「Deeply」には、深く学んでほしい、そんな思いが込められています。
+            当サイト「Voyage」には、英語の世界を深く楽しく学んでほしい、そんな思いが込められています。
           </p>
         </div>
       </section>
