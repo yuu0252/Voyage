@@ -67,7 +67,7 @@ $textColor: #484848;
   font-weight: 900;
   line-height: 1;
   transform: translateY(-6px);
-  color: #000;
+  color: #fff;
 }
 
 .footer__g-nav {
@@ -78,7 +78,7 @@ $textColor: #484848;
 .footer__g-nav > li {
   width: 150px;
   margin-top: 10px;
-  color: #000;
+  color: #fff;
 
   & > a {
     display: block;
@@ -105,5 +105,5 @@ $textColor: #484848;
 .copyright {
   font-weight: 700;
   text-align: center;
-  color: #000;
+  color: #fff;
 }

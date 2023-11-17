@@ -57,7 +57,7 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
         {contents &&
           contents.map((content: content) => (
             <SwiperSlide key={content.id}>
-              <div key={content.id}>
+              <li key={content.id}>
                 <Link className="card__item" href={`/contents/${content.id}`}>
                   <Image
                     alt="サムネイル"
@@ -72,7 +72,7 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
                     }}
                   />
                 </Link>
-              </div>
+              </li>
             </SwiperSlide>
           ))}
       </Swiper>

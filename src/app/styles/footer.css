@@ -39,6 +39,7 @@
   font-weight: 900;
   line-height: 1;
   transform: translateY(-6px);
+  color: #000;
 }
 
 .footer__g-nav {
@@ -49,6 +50,7 @@
 .footer__g-nav > li {
   width: 150px;
   margin-top: 10px;
+  color: #000;
 }
 .footer__g-nav > li > a {
   display: block;
@@ -74,4 +76,5 @@
 .copyright {
   font-weight: 700;
   text-align: center;
+  color: #000;
 }

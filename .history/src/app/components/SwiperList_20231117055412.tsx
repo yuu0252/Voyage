@@ -13,8 +13,8 @@ export default async function SwiperList({ category }: { category: string }) {
     })
     .catch(() => {});
   return (
-    <div className="swiper__container">
+    <ul className="swiper__container">
       <SwiperItem contents={contents} />
-    </div>
+    </ul>
   );
 }
