@@ -12,7 +12,7 @@ export default function ContentListPage() {
           <div className="container">
             <div className="section-title">
               <Image
-                src="/images/本.png"
+                src="/images/万年筆アイコン4.png"
                 alt="アイコン"
                 className="section-title__icon"
               />
