@@ -92,7 +92,7 @@ $textColor: #484848;
 #mainvisual {
   height: 300px;
   @include min {
-    height: 700px;
+    height: 500px;
   }
   & img {
     width: 100%;

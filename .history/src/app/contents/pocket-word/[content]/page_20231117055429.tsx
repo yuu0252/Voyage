@@ -24,7 +24,7 @@ export default async function Content({ params }: { params: params }) {
     });
   return (
     <>
-      <Header isThum={true} spWaypoint={300} pcWaypoint={700} />
+      <Header isThum={true} spWaypoint={300} pcWaypoint={500} />
       <Article content={content} />
     </>
   );
