@@ -69,9 +69,6 @@ $textColor: #484848;
     margin-top: 60px;
     padding-bottom: 10px;
     border-bottom: 3px dotted $themeColor;
-    @include min {
-      margin-top: 90px;
-    }
   }
 
   & p {

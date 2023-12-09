@@ -1,28 +1,5 @@
 $themeColor: #bc947c;
 $textColor: #484848;
-@mixin max {
-  @media screen and (max-width: 767px) {
-    @content;
-  }
-}
-
-@mixin max960 {
-  @media screen and (max-width: 959px) {
-    @content;
-  }
-}
-
-@mixin min {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin min960 {
-  @media screen and (min-width: 960px) {
-    @content;
-  }
-}
 
 #article {
   margin: 60px 0;
@@ -66,12 +43,9 @@ $textColor: #484848;
 
   & h3,
   h4 {
-    margin-top: 60px;
+    margin-top: 120px;
     padding-bottom: 10px;
     border-bottom: 3px dotted $themeColor;
-    @include min {
-      margin-top: 90px;
-    }
   }
 
   & p {

@@ -36,9 +36,15 @@
 }
 #article h3,
 #article h4 {
-  margin-top: 60px;
+  margin-top: 90px;
   padding-bottom: 10px;
   border-bottom: 3px dotted #bc947c;
+}
+@media screen and (min-width: 768px) {
+  #article h3,
+#article h4 {
+    margin-top: 90px;
+  }
 }
 #article p {
   width: 100%;
