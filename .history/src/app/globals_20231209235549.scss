@@ -31,19 +31,8 @@ body {
     font-size: 20px;
   }
 
-  & h2 {
+  & h1 {
     font-size: 24px;
-    @include min {
-      font-size: 26px;
-    }
-  }
-
-  & h3,
-  & h4 {
-    font-size: 20px;
-    @include min {
-      font-size: 24px;
-    }
   }
 
   & p {
