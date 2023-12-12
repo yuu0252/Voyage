@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 type content = {
   id: string;
-  name: string;
+  title: string;
   description: string;
   introduction: string;
   image: {
@@ -66,7 +66,7 @@ export default function SwiperItem({ contents }: { contents: Array<content> }) {
                     className="card__img"
                     src={content.image.url}
                   />
-                  <h3 className="card__title">{content.name}</h3>
+                  <h3 className="card__title">{content.title}</h3>
                   <div
                     className="card__text"
                     dangerouslySetInnerHTML={{
