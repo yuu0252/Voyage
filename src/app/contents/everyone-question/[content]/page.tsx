@@ -1,6 +1,5 @@
 import Header from '@/app/components/Header';
 import axios from 'axios';
-import './style.scss';
 import Article from '@/app/components/Article';
 import { redirect } from 'next/navigation';
 
