@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Mainvisual from './Mainvisual';
 
 export default function Article({
@@ -12,6 +13,13 @@ export default function Article({
     };
     imageSp: {
       url: string;
+    };
+    category: {
+      id: string;
+      title: string;
+      image: {
+        url: string;
+      };
     };
   };
 }) {
@@ -29,6 +37,16 @@ export default function Article({
                 dangerouslySetInnerHTML={{ __html: content.content }}
               />
             ))}
+            <Link
+              href={`/contents/${content.category.id}`}
+              className="category-link"
+            >
+              <img
+                src={content.category.image.url}
+                alt={content.category.title}
+              />
+              <p>{content.category.title}一覧へ</p>
+            </Link>
           </div>
         </section>
       </main>

@@ -174,3 +174,23 @@
   border: 3px dashed #bc947c;
   border-radius: 15px;
 }
+#article .category-link {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  box-shadow: 0 0 4px 4px rgba(188, 148, 124, 0.5);
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  #article .category-link {
+    margin-top: 60px;
+  }
+}
+#article .category-link > img {
+  width: 20%;
+}
+#article .category-link p {
+  width: 80%;
+  margin: 0;
+  text-align: center;
+}
